@@ -1,0 +1,16 @@
+/* this css part makes my web resposible  */
+
+@media(max-width:480px){
+    /* 30 rem means 30 * 16 = 480 px */
+    html{
+        font-size: 50%;
+    }
+
+    button{
+        padding: 0.5rem;
+    }
+
+    .main{
+        gap: 0.5rem;
+    }
+}

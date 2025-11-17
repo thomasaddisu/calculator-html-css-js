@@ -1,0 +1,126 @@
+/* ------------Gloabal Style------------------- */
+
+:root {
+    /* FONT SIZE */
+    --text-md: 2rem;
+    --text-lg: 3.2rem;
+
+    /* FONT WEIGHT */
+    --font-weight-normal: 400;
+    --font-weight-md: 500;
+
+    /* LINE HEIGHTS */
+    --line-height-tight: 1.2;
+    --line-height-normal: 1.5;
+
+    /* LETTER SPACING */
+    --letter-spacing-tight: -2px;
+
+    /* FONT FAMILY */
+    --font-family: 'Poppins', sans-serif;
+
+    /* COLORS */
+    --body: darkgrey;
+    --bg: #d0ebff;
+    --display: #3B3B3B;
+    --btn-num: #D6EAF8;
+    --btn-op: #AED6F1;
+    --btn-ac: #F1948A;
+    --text: #1C1C1C;
+
+    
+    /* MISCELLANEOUS */
+    --nav-height: 100px; /* Update the value in the flexbox 
+    topic */
+    --container--height:60rem;
+}
+
+/* ------------------UNIVERSAL SELECTOR------------ */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+    box-sizing: border-box;
+}
+
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background: var(--body);
+}
+
+button{
+    margin: 2rem;
+    padding: 1rem;
+}
+
+
+/* -------------SECTIONS-------------- */
+
+.container{
+    background: #FFFFFF;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 18rem;
+    width: 90%;
+    max-width: 400px;
+    max-height: var(--container--height);
+    text-align: center;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.header{
+    margin-bottom: 1.5rem;
+}
+
+.output{
+    font-size: var(--text-lg);
+    font-weight: var(--font-weight-md);
+    background: #EAF4FF;
+    padding:3rem 2rem 1rem ;
+    margin: 0;
+    text-align: right;
+    color: var(--text);
+}
+
+.main{
+    /* max-height: calc(100vh - var(--container--height)); */
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(4,1fr);
+    border-radius: 10px;
+}
+
+main button{
+    border-radius: 10px;
+    font-size: var(--text-md);
+}
+
+.zero{
+    grid-column: 1/3;
+}
+
+.delete{
+    grid-column: 2/4;
+    grid-row: 1;
+}
+
+.number{
+    background-color:var(--btn-num);
+}
+
+.operator{
+    background-color:var(--btn-op) ;
+}
+
+.remove{
+    background-color: var(--btn-ac);
+}
+
+
+
