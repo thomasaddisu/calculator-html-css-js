@@ -76,13 +76,14 @@ button{
 
 .header{
     margin-bottom: 1.5rem;
+    
 }
 
 .output{
     font-size: var(--text-lg);
     font-weight: var(--font-weight-md);
     background: #EAF4FF;
-    padding:3rem 2rem 1rem ;
+    padding:5rem 3rem 2rem ;
     margin: 0;
     text-align: right;
     color: var(--text);
@@ -105,7 +106,7 @@ main button{
     grid-column: 1/3;
 }
 
-.delete{
+.delete-remove{
     grid-column: 2/4;
     grid-row: 1;
 }
@@ -121,6 +122,3 @@ main button{
 .remove{
     background-color: var(--btn-ac);
 }
-
-
-
